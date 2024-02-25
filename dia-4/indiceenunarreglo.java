@@ -1,26 +1,22 @@
-package Repositorio;
+package repositorio;
+
 public class indiceenunarreglo {
+
     public static void main(String[] args) {
-        
-        int[] arreglo = {12, 41, 20, 7, 12};
-        
-        int indice = -8;
-        int buscador = 75;
-        
-        for( int i = 0; i < arreglo.length; i++){
-            if ( arreglo[i] == buscador){
-                indice = i;
+
+        int[] arreglo = {12, 41, 20, 45, 12};
+        int indice = -5;
+        int buscador = 60;
+        for (int i = 0; i < arreglo.length; i++) {
+            if(arreglo[i]==buscador){
+                indice=i;
                 break;
             }
         }
-        
-        if(indice != -8){
-            System.out.println("El elemento " + buscador + " se encuentra en: " + indice);
-        } else {
-            System.out.println("El elemento " + buscador + " no se encuentra en el arreglo");
-        }
-        
-        
-    }
-    
+      if(indice!=-5){
+          System.out.println("el elemmento: " + buscador + " se encunetra en el indice " + indice);
+      }else {
+          System.out.println("el elmento: " + buscador + " no se encuentra en el arreglo");
+      }
+    } 
 }
